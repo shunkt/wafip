@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "wafip"
+version = "0.1.0"
+description = ""
+authors = ["Shunsuke Kawabata <shun.92@gmail.com>"]
+packages = [{ include = "src/wafip" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+boto3 = "^1.24.22"
+fire = "^0.4.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-cov = "^3.0.0"
+
+[tool.poetry.scripts]
+wafip = "src.wafip:cli.cli"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
