@@ -7,12 +7,13 @@ packages = [{ include = "src/wafip" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-boto3 = "^1.24.22"
+boto3 = "^1.24.31"
 fire = "^0.4.0"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
+pytest = "^7.1.2"
 pytest-cov = "^3.0.0"
+tox = "^3.25.1"
 
 [tool.poetry.scripts]
 wafip = "src.wafip:cli.cli"

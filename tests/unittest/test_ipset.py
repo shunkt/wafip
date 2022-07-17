@@ -146,7 +146,6 @@ class TestIpSet:
             "Name": ipset_name,
             "Scope": "REGIONAL",
             "Id": ipset_id,
-            "Description": ipset_desc,
             "Addresses": [ip],
             "LockToken": "xxx"
         }
